@@ -97,7 +97,15 @@ Registrada **depois** de disparar a segunda execução e **antes** de ver qualqu
 **Previ:** 0.6. Não mais alto porque esta máquina está com 90+ containers de pé e eu já vi uma
 query trivial de SQLite levar 10 s aqui; a partida 2x2 entre quatro navegadores é o teste mais
 sensível a isso. Se falhar, aposto que é ela, por tempo, e não por asserção.
-**Resultado:** ver abaixo.
+**Resultado: ✅ acertei.** 18 de 18, em 3,9 min, **zero intermitentes** (a primeira execução
+levara 17,8 min com 5 falhas e 1 intermitente). O teste que eu apontei como mais sensível, o
+2x2, caiu de 2,3 min estourando o limite para 1,1 min passando — o ganho veio do driver de
+partida em um único `page.evaluate` por passo em vez de quatro `isVisible()`.
+
+Vale separar duas coisas que eu misturei na previsão: eu acertei o **resultado** e o raciocínio
+sobre **onde** estava o risco estava certo, mas a causa que eu temia (contenção de host) não
+apareceu porque eu removi a sensibilidade a ela em vez de torcer. Previsão resolvida por ação,
+não por sorte — o que é o único jeito honesto de resolver uma a 0.6.
 
 ### P8 — `p = 0.3` — existe ainda ≥1 regra de F1/F2 que eu não implementei e não sei
 Registrada agora, sem jeito de verificar nesta sessão.
