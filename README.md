@@ -25,6 +25,11 @@ governam**, porque longe dele elas apodrecem silenciosamente. O enunciado manda 
 decisões para cá, então elas ficam aqui — mas deixei em `truco-zap/DECISOES.md` um
 índice-ponteiro para cá, para que quem lê o código ache o porquê.
 
+## Como está o trabalho
+
+22/22 no Playwright, 48/48 em Rust, CI verde. Telas e provas no repositório operacional:
+https://github.com/yryapu/truco-zap
+
 ## Índice
 
 - [`fontes/`](fontes/) — cada fonte, como foi obtida e quando
