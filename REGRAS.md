@@ -182,11 +182,19 @@ Se a mão de ferro empatar, joga-se outra (F1: "If the hand is tied, another iro
 > acontecer mesmo que ela não passe pela mão de onze. Por exemplo, num placar de 9x9, uma
 > dupla vence uma mão trucada valendo 3 pontos, ela vence a partida com 12x9."
 
-## R13. Rotação do "mão" (quem puxa a primeira rodada)
+## R13. **[DIVERGÊNCIA]** Rotação do "mão" (quem puxa a primeira rodada)
 
-Primeira mão: jogador sorteado. Mãos seguintes: rotaciona um assento.
-> F2: "Nas demais mãos, o jogador que começa a primeira rodada é sempre o da esquerda ao que
-> começou a mão anterior."
+Primeira mão: jogador sorteado. Mãos seguintes: rotaciona um assento **contra** a ordem de jogo.
+
+> F2: "Nas demais mãos, o jogador que começa a primeira rodada é sempre **o da esquerda** ao que
+> começou a mão anterior." — e a ordem de jogo é anti-horária, "o próximo a jogar é o que está a
+> **direita** do que jogou". Logo o mão anda contra a ordem de jogo.
+> F1: "the turn to deal passes **to the right** after each hand" — logo o mão anda *junto* com a
+> ordem de jogo. Contradiz F2.
+
+Sigo F2. Decisão e critério: [D16](decisoes/D16-rotacao-do-mao.md). Esta divergência estava
+**escondida** na primeira versão deste arquivo, que dizia só "rotaciona um assento" sem direção
+enquanto o código seguia F1 — ver [ERROS.md](ERROS.md) E8.
 
 ## R14. **[DIVERGÊNCIA]** Quem puxa depois de uma rodada empatada
 
@@ -200,6 +208,31 @@ F1 (Paulista) tem uma regra dura: "When one or both of the teams has 11 points, 
 automatically gives the victory to the opposing team - that is, the opposing team wins the
 entire game". F2 simplesmente diz que não é possível.
 Decisão: [D10](decisoes/D10-truco-na-mao-de-onze.md).
+
+## R17. Ver a mão do parceiro para responder a um pedido
+
+A dupla que precisa **responder** a um truco (ou a um 6, 9, 12) pode trocar as cartas de olhada
+antes de correr, aceitar ou aumentar.
+
+> F1 (Paulista): "Immediately after truco is called, the opponents can look at each other's hands
+> by passing all cards face down to each other and discuss whether to accept the call. Similarly,
+> if the opposing team decides to call 6 later on (or immediately), the Truco-calling team can
+> also look at each other's hands before deciding if they accept the raise to 6 or decline."
+
+Quem decide é quem vê — a olhada existe para a decisão. Em 1x1 isto é vacuamente verdadeiro.
+Regra que eu tinha **perdido** na primeira versão, apesar de ter lido o parágrafo: ERROS.md E10.
+
+## R18. Ilegal aumentar quando aceitar já venceria a partida
+
+> F1: "It is illegal to raise a truco if just accepting would give you enough points to win the
+> game. For example, suppose team A has a score of 7 and team B has 5. Team A says 'truco' and
+> team B says 'vale 6'. It is now illegal (as well as stupid) for team A to say 'vale 9', because
+> 6 points are already sufficient to win the game for them."
+
+Implementada como **recusa do comando** (`aumento_desnecessario`), e o botão de aumentar não
+aparece na interface nesse caso — mesma filosofia de [D10](decisoes/D10-truco-na-mao-de-onze.md):
+não puno um clique que a interface permitiu. F1 trata o caso como penalidade de 1 tento; eu não
+implemento penalidades, e perder a regra junto com a penalidade foi o erro E10.
 
 ## R16. 1x1
 
