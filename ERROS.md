@@ -40,3 +40,85 @@ no domínio original, então TLS continua verificado contra o nome certo. Teste 
 `devolve_o_endereco_validado_para_ser_fixado_na_conexao`.
 **Lição que anoto:** uma guarda que devolve `bool` ou `()` quase sempre tem um TOCTOU escondido.
 Guarda boa devolve a coisa validada.
+
+### E4 — eu escrevi uma asserção de teste que contradizia a R9 que eu mesmo havia escrito
+**Como encontrei:** a primeira execução do Playwright falhou no teste de truco. A asserção era
+"depois de a mão chegar a 6, nenhum dos dois pode pedir". A R9 que eu escrevi em `REGRAS.md`,
+citando F2, diz o contrário: "O pedido de 6, 9 e 12 só pode ser feito pela dupla que **não**
+fez o último pedido". O último pedido (6) foi do respondente, então o pedinte original **pode**
+pedir nove.
+**Por que importa:** o motor estava certo; o teste estava errado *na direção perigosa* — se eu
+tivesse "consertado" o código para passar o teste, teria quebrado uma regra correta para
+satisfazer uma asserção inventada. A única coisa que me salvou foi reler a R9 antes de mexer
+no motor.
+**Correção:** o teste agora exige "pedir nove" no pedinte original e botão ausente no
+respondente, o que o transforma num teste de R9 em vez de um teste de nada.
+
+### E5 — a entrega de webhook do E2E não alcançava o receptor: `http://e2e:9099` não resolve
+**Como encontrei:** nos logs do servidor, `entrega ... falhou (tentativa 1): http: error
+sending request for url (http://e2e:9099/hook)`, três vezes por evento. O teste do webhook
+falhou por timeout e eu só soube o motivo olhando o log do *servidor*, não o do teste.
+**O erro:** eu apontei o webhook para o nome do serviço do Compose (`e2e`). Um container criado
+por `docker compose run` é anexado à rede, mas se chama `<projeto>-e2e-run-<hash>`, e o alias
+de serviço não é garantido para containers avulsos.
+**Correção:** o teste descobre o próprio IP na rede do Compose (`os.networkInterfaces()`) e
+registra o webhook nesse IP. Não depende de DNS nenhum.
+**Lição:** quando um teste de integração falha por timeout, o log útil costuma estar no outro
+lado da conexão.
+
+### E6 — `jogarAteOFim` devolvia "quem viu o fim primeiro" e eu chamei de "vencedor"
+**Como encontrei:** o teste de ranking falhou esperando o emblema "pé-de-meia" num jogador que
+não tinha vitória. A tela de fim aparece para os **dois** jogadores — vencedor e perdedor — e
+meu laço devolvia a primeira página em que ela ficou visível.
+**Correção:** função `quemVenceu()` separada, que lê o texto e procura "Vitória". A confusão
+estava no nome da variável, que é onde esse tipo de bug mora.
+
+### E7 — testes E2E compartilhavam fila e se emparelhavam entre si
+**Como encontrei:** falhas intermitentes com `abrirMesa` estourando 30s. A fila do servidor é
+indexada por `(modo, aposta)`, e vários testes usavam a mesma aposta — então o jogador do teste
+N era emparelhado com um resto do teste N-1 e o par do teste N ficava esperando para sempre.
+**Correção:** cada spec usa uma aposta única (7, 13, 17, 23, 29, 31, 37, 41). Fila isolada por
+construção, sem precisar de limpeza entre testes.
+**Efeito colateral bom:** para fazer isso eu precisei trocar o `<select>` de 5 apostas fixas por
+um campo numérico — e aí percebi que o `<select>` **violava o enunciado**, que diz "aposta
+quanto quiser". Eu tinha estreitado o requisito sem notar. Ver E9.
+
+### E8 — o mão rotacionava na direção errada, e o meu teste petrificava o erro
+**Como encontrei:** não encontrei — a revisão adversarial que eu pedi a um subagente encontrou,
+e foi o achado mais valioso dela. Crédito registrado.
+**O erro:** `nova_mao` fazia `+1`. F2, que é a fonte que `REGRAS.md` R13 cita, manda o mão andar
+para a esquerda, isto é, **contra** a ordem de jogo (`-1`). F1 manda `+1`. Eu implementei F1 e
+documentei F2, sem marcar divergência — exatamente o pecado que o resto do `REGRAS.md` evita.
+**O agravante, que é a parte que eu quero lembrar:** o teste `r13_o_mao_rotaciona_um_assento`
+afirmava `(primeiro + i) % 4`. Ele passava porque estava copiando a implementação. Um teste que
+copia a implementação é pior que nenhum teste: ele produz confiança falsa e congela o bug.
+Reescrevi o teste a partir da frase da fonte, e aí ele falhou — como devia ter falhado desde o
+começo. Decisão em [D16](decisoes/D16-rotacao-do-mao.md).
+**Padrão que anoto:** escrever o teste olhando o código em vez de olhar a fonte. Os outros
+testes de regra eu escrevi a partir de F1/F2; este eu escrevi a partir do `engine.rs`.
+
+### E9 — o campo de aposta era um `<select>` de 5 valores, e o enunciado diz "quanto quiser"
+**Como encontrei:** de lado, enquanto consertava E7. Precisei de apostas arbitrárias para
+isolar as filas dos testes, fui trocar o `<select>` e só então li de novo o requisito:
+"aposta **quanto quiser** na partida". Cinco presets não são "quanto quiser".
+**Por que eu não vi antes:** eu tratei "aposta" como um controle de interface a projetar, e não
+como uma frase do enunciado a cumprir. O `<select>` até parecia melhor UX — e era mais fácil de
+validar. Conveniência minha disfarçada de decisão de produto.
+**Correção:** campo numérico com atalhos (amistoso / 50 / 100 / 500 / tudo), validado no
+cliente para dar erro rápido e validado no servidor contra o saldo lido do **banco**.
+
+### E10 — duas regras de F1 que eu nunca implementei nem especifiquei
+**Como encontrei:** a mesma revisão adversarial (categoria "regra-ausente").
+1. **Ver a mão do parceiro ao responder um pedido.** F1 (Paulista) é explícito: "Immediately
+   after truco is called, the opponents can look at each other's hands... Similarly, if the
+   opposing team decides to call 6 later on, the Truco-calling team can also look". Eu tinha
+   lido essa seção — ela está no mesmo bullet list de onde tirei três outras regras — e passei
+   por cima. Agora é R17.
+2. **Ilegal aumentar quando aceitar já venceria a partida.** F1: "It is illegal to raise a truco
+   if just accepting would give you enough points to win the game", com exemplo numérico
+   (7 × 5, A não pode pedir 9 depois do 6 de B). Eu li essa regra como "penalidade", que é a
+   seção onde ela reaparece, e penalidade eu tinha decidido não implementar — e assim perdi a
+   regra junto com a penalidade. Agora é R18, implementada como recusa do comando (mesma
+   filosofia de [D10](decisoes/D10-truco-na-mao-de-onze.md)) e com o botão escondido na interface.
+**Padrão:** as duas regras estavam em parágrafos que eu já tinha lido e aproveitado. Reler não
+é o mesmo que reler procurando o que falta.

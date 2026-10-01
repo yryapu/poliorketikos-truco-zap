@@ -22,3 +22,4 @@ porque uma decisão sem alternativa descartada não é decisão, é inércia.
 | [D13](D13-playwright-em-docker.md) | Playwright dentro do Docker |
 | [D14](D14-subagentes.md) | um subagente, adversarial, sobre o motor |
 | [D15](D15-robos.md) | robôs completam a mesa em 8s |
+| [D16](D16-rotacao-do-mao.md) | o mão rotaciona contra a ordem de jogo (segue F2) |
