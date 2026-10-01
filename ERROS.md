@@ -20,3 +20,23 @@ e não o motor foi o código do erro: `NaoEhSuaVez` é uma recusa *do motor func
 resultado de regra errado.
 **Correção:** helper `mesa()` que fixa `mao_de_quem = 0` para os testes roteirizados. O sorteio
 continua em produção e o fuzz exercita qualquer assento inicial.
+
+### E3 — SSRF por DNS rebinding: eu validava o DNS e deixava o cliente HTTP resolver de novo
+**Como encontrei:** não encontrei — o review de segurança automático que roda sobre os commits
+empurrados achou, e apontou TOCTOU em `webhooks.rs`. Dou o crédito porque esconder a origem de
+um achado é o tipo de desonestidade que este caderno existe para não cometer.
+**O erro:** `url_permitida()` resolvia o host, checava que nenhum IP era interno, devolvia
+`Ok(())` — e então `reqwest` resolvia o host **de novo** na hora do connect. Um resolvedor
+hostil devolve um IP público para a checagem e `169.254.169.254` para a conexão. A guarda
+parecia funcionar (e os testes passavam) porque os testes só exercitavam hosts que resolvem
+consistentemente.
+**Por que eu não vi:** escrevi a guarda pensando em "a URL é permitida?", que é uma pergunta
+sobre a string. A pergunta certa é "para qual endereço esta conexão vai?", que é sobre o socket.
+O tipo de retorno (`Result<(), String>`) carregava esse erro de enquadramento: ele descartava
+justamente o dado que precisava ser usado.
+**Correção:** `endereco_permitido()` devolve `Option<(host, SocketAddr)>`, e a entrega monta um
+cliente com `.resolve(host, addr)` para **fixar** o endereço validado. SNI e header Host ficam
+no domínio original, então TLS continua verificado contra o nome certo. Teste novo:
+`devolve_o_endereco_validado_para_ser_fixado_na_conexao`.
+**Lição que anoto:** uma guarda que devolve `bool` ou `()` quase sempre tem um TOCTOU escondido.
+Guarda boa devolve a coisa validada.
