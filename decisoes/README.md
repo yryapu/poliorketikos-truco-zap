@@ -23,3 +23,4 @@ porque uma decisão sem alternativa descartada não é decisão, é inércia.
 | [D14](D14-subagentes.md) | um subagente, adversarial, sobre o motor |
 | [D15](D15-robos.md) | robôs completam a mesa em 8s |
 | [D16](D16-rotacao-do-mao.md) | o mão rotaciona contra a ordem de jogo (segue F2) |
+| [D17](D17-direcao-visual.md) | direção visual: boteco, não cassino |

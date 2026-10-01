@@ -122,3 +122,56 @@ cliente para dar erro rápido e validado no servidor contra o saldo lido do **ba
    filosofia de [D10](decisoes/D10-truco-na-mao-de-onze.md)) e com o botão escondido na interface.
 **Padrão:** as duas regras estavam em parágrafos que eu já tinha lido e aproveitado. Reler não
 é o mesmo que reler procurando o que falta.
+
+### E11 — moldura dupla: pus uma caixa de carta atrás de um glifo que já desenha uma carta
+**Como encontrei:** tirei prints das telas e olhei. No print a carta aparecia dentro de outra
+carta — um retângulo creme maior em volta do desenho do glifo.
+**O erro:** eu tratei o code point como se fosse um ícone a ser emoldurado. Ele não é: o glifo
+U+1F0A1 **é** a carta inteira, com borda, naipe e valor.
+**A correção errada que tentei primeiro:** tirar a caixa e deixar só o glifo. Resultado pior — o
+glifo do Noto Sans Symbols 2 é **só contorno**, a face é transparente, então as cartas viraram
+fantasmas de contorno sobre a mesa escura. O print mostrou isso na hora.
+**A correção certa:** medir. `e2e/medir.mjs` renderiza o glifo em canvas e devolve o retângulo
+de tinta: avanço 0.675em, desenho 0.575em × 0.765em, folga 0.05em de cada lado. O corpo creme
+agora é um `::before` encaixado nessas medidas exatas.
+**Lição:** eu estava prestes a ajustar números no olho até "ficar bom". Medir custou um script
+de 30 linhas e acabou com a questão.
+
+### E12 — botões invisíveis: texto creme sobre painel creme
+**Como encontrei:** print do lobby. "Registrar endereço" simplesmente não estava lá — ou melhor,
+estava, com `color: var(--giz)` (creme) sobre a superfície de papel (creme).
+**Por que aconteceu:** criei a classe `.liso` pensando no fundo escuro e depois inventei a
+superfície de papel sem revisar quem herdava o quê. Classe utilitária com cor fixa e duas
+superfícies de fundo diferentes é uma armadilha que eu mesmo armei.
+**Correção:** `.papel .liso` com cor própria. O certo a longo prazo seria a cor do botão vir de
+uma variável que a superfície redefine; para o tamanho deste front, a regra de escopo basta.
+
+### E13 — no celular, o painel de avisos cobria o botão de procurar mesa
+**Como encontrei:** **não foi pelo print.** O print mostrava a tela inteira e parecia bem. Quem
+achou foi o Playwright, tentando clicar: `<section class="papel recibo">… intercepts pointer
+events`.
+**O erro:** declarei `grid-area: avisos` nos painéis **fora** da media query, mas
+`grid-template-areas` só existe no layout de duas colunas. Sem as áreas nomeadas, os painéis
+caíram empilhados no mesmo lugar.
+**Lição que importa mais que o bug:** print prova aparência, não prova *uso*. Um elemento
+invisível por cima de um botão é exatamente o tipo de defeito que uma imagem não mostra e um
+clique mostra na primeira tentativa.
+
+### E14 — as cartas do leque interceptavam o clique do botão de truco
+**Como encontrei:** a suíte E2E. Dois testes de truco falharam, um deles levando 3 minutos — o
+tempo do teste inteiro — porque o Playwright ficou repetindo o clique.
+**A causa, que eu não teria adivinhado:** as cartas da mão usam `transform` para abrir em leque.
+`transform` cria **contexto de empilhamento**, e com isso elas passam a pintar na camada de
+posicionados, **acima** do conteúdo de fluxo normal que vem depois delas no DOM — inclusive os
+botões de ação. A carta da ponta cobria o botão e engolia o clique.
+**Correção:** `position: relative; z-index: 5` na barra de ações, e mais respiro embaixo do leque.
+**Por que registro:** eu teria jurado que "elemento posterior no DOM fica por cima". Fica — até
+alguém aplicar `transform`. É a classe de bug que só um clique de verdade encontra.
+
+### E15 — mudei a copy e quebrei um teste que conferia a copy antiga
+**Como encontrei:** suíte E2E. O teste procurava `'sua vez'` em minúscula; a copy nova diz
+"Sua vez. Escolha uma carta."
+**Por que registro, já que é trivial:** porque a tentação era "consertar" a copy de volta para o
+teste passar. O teste é que estava acoplado demais — conferia caixa alta de uma frase de
+interface, que é exatamente a coisa que deve poder mudar. Agora ele usa `/sua vez/i`, e a frase
+melhor fica. **Teste não é dono da copy.**
