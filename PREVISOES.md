@@ -43,10 +43,17 @@ cuidadoso na hora.
 Registrada antes do primeiro build.
 **Previ:** 0.35. Baixa de propósito: axum 0.8 mudou assinaturas de handler e `WebSocketUpgrade`
 em relação a 0.6/0.7, e escrevo sem consultar os docs de cada assinatura.
-**Resultado parcial: `truco_core` compilou de primeira.** Mas a previsão era sobre o build todo,
-e o risco que eu citei (assinaturas do axum 0.8) está no `truco_server`, que ainda não compilou
-quando escrevi isto. Resolvido abaixo, junto com o resultado do servidor — não vou declarar
-acerto com metade do build.
+**Resultado: ❌ errei — e errei sobre o motivo, não só sobre o resultado.**
+`truco_core` compilou de primeira. `truco_server` (≈1200 linhas, axum 0.8 + sqlx + reqwest)
+deu **5 erros**, e nenhum deles foi o que eu previ: não houve um único problema de assinatura
+do axum. Os 5 eram a mesma coisa — eu referenciei em `main.rs` um campo (`Mesa::bolo`) e um
+método (`Mesa::reagendar`) que decidi criar enquanto escrevia o `main`, e esqueci de voltar
+para declará-los no `hub.rs`.
+
+Isto é mais interessante que a previsão em si: eu apostei contra a minha capacidade de
+**lembrar APIs de biblioteca**, quando deveria ter apostado contra a minha capacidade de
+**manter dois arquivos coerentes escrevendo de cima para baixo**. A previsão calibrou o risco
+no lugar errado. Anoto como padrão: o erro raramente está na parte que dá medo.
 
 ### P5 — `p = 0.8` — o E2E Playwright falha na primeira execução por *timing*, não por lógica
 Registrada antes de rodar o E2E.
