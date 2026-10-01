@@ -1,0 +1,367 @@
+
+
+ 
+
+Brazilian Truco - card game rules
+
+    
+     
+    
+       
+  
+
+  
+
+  
+  
+
+       
+      
+    
+	  Home
+	  A-Z
+	  
+    
+  
+    
+   
+    Home Page > Classified Index > Trick Taking Games > Put Group > Truco > Brazilian        
+  
+
+  
+  
+     Brazilian Truco
+
+Players: 4
+  40
+Lively and popular Brazilian partnership game for four players. The aim is to win two of the three tricks, and the score for this can be increased by betting during the play.
+
+Class: Put Group
+
+Related games: Truco (Uruguayan), Truco (Argentinean)
+
+Browse classification network
+
+Region: Brazil
+
+	⭐⭐⭐Difficulty
+
+	❤️❤️❤️❤️❤️Popularity
+
+🔥️🔥️Trend
+
+    
+      Introduction
+      Truco Mineiro
+        
+          Players and Cards
+          Preparation and  Deal
+          Signals
+          The Play
+          The Truco
+          Special Hands
+          Penalties
+          Variations
+        
+      
+      Truco Paulista
+      Other Truco web sites, software and online games
+    
+    Introduction
+    Truco is probably the most popular card game in Brazil. It is a loud and lively  game, which might look to an outsider like four drunken people arguing passionately and about to break into a fight. As in most games of the Put group, the players are dealt three cards each and the objective is to win the majority of the three tricks. However, it is possible to interrupt the play and attempt to raise the stake, and this is where there can be a lot of bluffing, yelling and good-natured intimidation.
+
+    At least three different versions of Truco are played in Brazil. Truco Mineiro, which is played in Minas Gerais, is described first on this page, followed by Truco Paulista, which is played in São Paulo. A third variant Truco Gaucho (or Truco Gaudério or Truco Cego) is played in Rio Grande do Sul using Spanish cards: it is similar to Argentinean Truco, which is described on a separate page.
+
+    This page is based mostly on information from Jonathan Avila and Gustavo Schafaschek.
+
+    Truco Mineiro
+    Players, Equipment and Game Format
+    This game is for four players in fixed partnerships, partners sitting opposite. The direction of play is counter-clockwise.
+
+     It can be played with a 40-card deck removing just the 8's 9's and 10's from a standard 52-card deck. This is called  a dirty deck (baralho sujo) or full deck (baralho cheio). In the full deck, the ranking of the cards from high to low is:
+
+    
+      Four of Clubs (zap)
+      Seven of Hearts (escopeta)
+      Ace of Spades (espadilha)
+      Seven of Diamonds (pica-fumo)
+      Threes
+      Twos
+      Aces of Hearts, Clubs and Diamonds
+      Kings
+      Jacks
+      Queens
+      Black Sevens
+      Sixes
+      Fives
+      Fours other than clubs
+      
+    The top four cards are called manilhas - their names in Portuguese are given in brackets. With the exception of these four, the suits of the cards are irrelevant, so that for example all the Threes are equal in rank, as are all the Twos and so on. Note that, as in many games of Portuguese ancestry, the Queens rank lower than the Jacks.
+
+ It is also possible to play with a "clean"  deck of 27 cards, in which all the cards ranking below the queens are removed, or to add one joker to the deck - see the variations section for details.
+
+It is traditional to score using ormosia seeds (tentos): at least 22 seeds are needed, and at the start of the game they are stored  in a convenient container, such as a dish or jar. A game consists of a series of deals, in each of which a partnership may win one or more tentos. One player from the winning partnership takes the appropriate number of tentos from the dish and displays them on the table in front of him or her to show the team's current score. The first partnership to collect 12 (or more) tentos over however many deals it takes wins the game. If actual tentos are not available, beans can be used as a substitute, or the score can be kept with pen and paper.
+
+Preparation and  Deal
+The partnerships are agreed by any convenient method. If they have not been pre-arranged, and the players have unequal experience, then it is common for each of the two more experienced players to take one of the less experienced players as a partner, to balance the game. Alternatively the players can just draw cards from the shuffled deck, and those who draw the highest cards (counting from King high to Ace low) are partners against the others. Since partners are allowed to communicate information by a secret code of gestures, each partnership will want to spend some time alone before the game agreeing their system. If a series of games is played, it is usual to keep the same partnerships throughout so that the discussion on signals does not have to be repeated.
+
+The first dealer is chosen by some random process - for example whoever draws the lowest card from the shuffled deck - and the turn to deal passes to the right after each hand. The dealer, who will be the last to play to the first trick, is  known as 'the foot' (o pé) while the player to dealer's right, who begins the first trick, is 'the hand' (o mão).
+
+The dealer shuffles the cards - a riffle shuffle should be used and the cards should be shuffled above the table in view of the other players. The official rules actually prohibit the use of other types of shuffle, such as the  weave, in which the two halves of the deck are forced into each other, interleaving the cards, or the overhand shuffle in which blocks of cards are moved from the bottom to the top of the deck. The player to dealer's left then cuts the cards - they may be cut up to three times, but each time the cutter must divide the pack into just two stacks, not more. The cutter then tells the dealer whether to deal the cards downwards from the top ('go down' - 'desce') or upwards from the bottom ('go up' - 'sobe').
+
+As directed, the dealer deals the top three cards or the bottom three cards of the pack to the mão (the 'hand' player, to the right of the dealer) who looks at them and has three options:
+
+  keep the cards;
+  pass the cards to partner - the cards are passed face down across the table and are not seen by the dealer or dealer's partner;
+  burn the cards - the three cards are placed face up on the table for all to see and then discarded and not used until the next deal.
+  
+If option 2 or 3 is chosen, the dealer deals the next three cards to the  mão, who has the same options again, with the following restrictions:
+
+  only one set of three cards can be passed to partner, so after option 2 has been chosen, only 1 and 3 are available;
+  not more than three sets of cards can be rejected, so after the  mão has seen nine cards and either burnt them or passed them to partner, the fourth set of three cards must be kept.
+  
+When the  mão chooses option 1 and keeps the cards, the dealer deals the next three cards to partner, the next three cards to the left (unless the player to the left already has cards passed by the  mão), and the next three cards go to the dealer.
+
+Signals and Conversation
+Truco is a lively and noisy game. Players can signal to each other with gestures at any point during the game to tell each other what cards they have, to indicate what card they would like their partner to play, or just to confuse the opponents. The code of gestures is agreed in advance in private between the partners and is not disclosed to the opponents. However, players are not allowed exchange specific information about the cards they hold by speaking. It is legal to talk in vague terms about the strength of one's hand, and to discuss with partner whether to make, accept or raise a bet (see Truco below), but not to mention any specific cards, nor to ask one's partner about the strength of his or her cards.
+
+The Play
+In principle the cards are played in three tricks, known in Brazil as rodadas (rounds), each consisting of a card from each player. The mão leads (plays the first card) to the first trick, the other players in anticlockwise order each play a card. The highest card played wins the trick for the team of the person who played it, and the player of this highest card leads to the second trick. The second trick is played similarly and the winner of the second trick leads to the third. Whichever team wins a majority of tricks wins the hand and takes one tento from the supply.
+
+There is no restriction on what card may be played to a trick: for example there is no requirement to follow suit or to beat the previous cards. In the second and third tricks there is the option to play one's card face down (encoberta - covered) rather than face up. A card played face down can never win a trick, but a player may nevertheless choose to play a card face down for tactical reasons. Cards cannot be played face down in the first trick.
+
+Because some of the cards are equal in strength, there is the possibility that a trick may be tied , when there is more than one equally high card in the trick, the highest cards being played by opposing players and the other cards being lower or face down. The Portuguese term is  empatar (to tie) or cangar (to yoke) or melar (to honey or make sticky) or embuchar (to tamp). In this case, the trick belongs to neither team. The player who played the first of the cards that tied as the highest cards in the trick plays the first card to the next trick. When a trick is tied in this way, the hand is won by the first team that wins a trick.
+
+In the unusual case where two partners play equal highest cards to a trick while their opponents play lower (or face down) cards, the trick is not tied, but is won by the team that played the highest cards. Whoever played the first of those cards plays first to the next trick.
+
+Because there are only three tricks, it is easy to list all the possible results. Call the two teams A and B.
+
+  
+    Trick 1
+    Trick 2
+    Trick 3
+    Result
+  
+  
+    A wins
+    A wins
+    not played
+    A wins
+  
+  
+    A wins
+    tied
+    not played
+    A wins
+  
+  
+    A wins
+    B wins
+    A wins
+    A wins
+  
+  
+    A wins
+    B wins
+    tied
+    A wins
+  
+  
+    A wins
+    B wins
+    B wins
+    B wins
+  
+  
+    tied
+    A wins
+    not played
+    A wins
+  
+  
+    tied
+    tied
+    A wins
+    A wins
+  
+  
+    tied
+    tied
+    tied
+    tied
+  
+  
+    tied
+    tied
+    B wins
+    B wins
+  
+  
+    tied
+    B wins
+    not played
+    B wins
+  
+  
+    B wins
+    A wins
+    A wins
+    A wins
+  
+  
+    B wins
+    A wins
+    tied
+    B wins
+  
+  
+    B wins
+    A wins
+    B wins
+    B wins
+  
+  
+    B wins
+    tied
+    not played
+    B wins
+  
+  
+    B wins
+    B wins
+    not played
+    B wins
+  
+
+The Truco
+A call of "truco" is an attempt to raise the stake for the hand from 1 tento to 3 tentos, by betting on the result current trick. Any player may call "truco" when it is his or her turn to play to a trick. The player must then wait for a reply before playing a card. The opposing team has three options:
+
+  Run away (corro) - the opponents give up and the team that called truco score 1 tento without further play. The unplayed cards are not shown: the trucador (the player who called truco) will often hide his or her card(s) in the undealt pack to make sure no one sees whether the call was a bluff.
+  Accept (aceito) - the bet is accepted and the winners of the current trick will score 3 tentos. Alternative expressions to accept the truco are allowed provided that the meaning is clear, for example "joga" (play it!), "bate" (hit it!), "vem" (I dare you), "mata" (kill me!) or "cai" (fall [under my sword]). The play is resumed to determine the result.
+  Raise (retruco) - the bet is accepted and the opponents wish to raise the stake again to 6 tentos. This can also be expressed by saying "vale 6" (it's worth 6) or "peço 6" (I ask for 6), in which case  the team of the trucador must reply.
+
+In case of a raise, the trucador's team must reply: they  run away, accept or raise again. The teams can continue to raise alternately, in increments of 3 tentos. After each raise, the other team either runs away allowing team who raised to win the previous stake without play, or accepts the new proposed stake and play the trick, or raises again. After "vale 6" the next raise is  "vale 9" and finally "queda" (a fall), asking to raise the stake to 12 tentos, which is enough to decide the whole game. For example after "truco" - "vale 6" - "vale 9" - "corro" the trucador's team would take 6 tentos without play: after "truco" - "vale 6" - "vale 9" - "aceito" the trick would be played for 9 tentos.
+
+After a truco, either player may speak on behalf of their team, and the first reply given by either member of the team is binding. Normally the reply will be given by the member of the team whose turn to play a card would be next, often after a little discussion with partner in words or gestures.
+
+The trucador must wait until all betting is finished before playing his or her card if the final bet is accepted. Any remaining players then play their cards to the trick and the result is decided without further betting.
+
+A truco is a bet on the result of the current trick. If the bet is accepted the winners of the current trick win the hand. Note that a truco can change the result of the hand. For example if team A wins the first trick, there is a truco in the second trick and team B win that trick, team B have won the hand, even though without the truco A might have won the third trick.
+
+If a truco is accepted and the trick is tied, the result depends on whether any of the tying cards was played before the truco. If any of the highest cards in the trick was played before the truco was said, the team that bet or raised last loses the hand (even if they had previously won a trick). If the highest cards were both (all) played after the truco, then the trick is really tied and another trick is played to decide the result. If the last trick is tied after a truco was accepted, the whole hand is tied and neither team scores.
+
+It is illegal to raise a truco if just accepting would give you enough points to win the game. For example, suppose team A has a score of 7 and team B has 5. Team A says "truco" and team B says "vale 6". It is now illegal (as well as stupid) for team A to say "vale 9", because 6 points are already sufficient to win the game for them.
+
+Special Hands
+    When one or both teams are just 1 tento from winning the game, with a score of 11, the rules change slightly. 
+
+    Deal during special hands. The cards are shuffled and cut as usual and the cutter can instruct the dealer to deal upwards from the bottom or downwards from the top. The dealer then deals out the cards three at a time and everyone must play with the hand they were dealt. The mão is not allowed to reject any cards or pass any to partner.
+
+    Play when just one team has a score of 11. After the deal, the leading team, who have 11 tentos, may look at each other's cards, passing their hands to each other face down and then returning them after inspection, but without discussion. They must then decide whether to play for 3 tentos or to run away, giving the losing team 1 tento. If they decide to play, the tricks are then played in the usual way, except that no truco is allowed. If the leading team wins the hand they win the game; if they lose the other team gets 3 tentos.
+
+    Play when both teams have a score of 11. This is called an "iron hand" (mão de ferro). The players are not allowed  not look at their cards, but keep them face down as dealt and play the tricks by simply turning over the top card when it is their turn. There is no truco.  If the hand is tied, another iron hand is played. Thus the result of the game is determined by chance. The rationale is that if neither team has been skilful enough to win without reaching this position, then they have been relying on luck so far, and their final fates should now be decided by luck.
+
+    Irregularities
+    If the dealer accidentally exposes a card dealt to an opponent, the player can either keep the card or discard (burn) it and ask for a new one. A card dealt face up to dealer or dealer's partner must  be kept by the player.
+
+    If any player receives too few cards in the deal, the player can simply ask for an extra card to complete the hand. If the dealer or the dealer's partner is dealt too many cards, the extra card(s) can be returned to the deck if they hand not yet been seen. If the player has seen the cards, an opponent selects one card at random from the hand, exposes it and discards (burns) it. If an opponent of the dealer has too many cards, the opponents automatically win the hand. Also the player with too many cards can truco and win the truco if accepted by showing that he or she has too many cards.
+
+    When both teams have a score of less than 11, the penalty for any irregularity is that the other team takes one tento. Irregularities penalised this way include:
+
+    
+      illegal methods of shuffling or cutting,
+      talking about the cards in one's hand,
+      showing one's cards to another player when not specifically permitted,
+      raising a truco beyond the value your team needs to win the game.
+      
+    A team should not be able to win a game by means of such a penalty, so when either team has a score of 11, the penalty of an irregularity is that the offending team loses 1 tento. In addition to the above, penalties are now incurred for:
+
+    
+      attempting to reject cards during the deal,
+      calling truco.
+    
+    Variations
+    There are numerous small variations in the rules of Truco, and players who have not played before will need to agree before starting a game on which of these to use.
+
+    
+      Clean deck
+      Truco can be played  with  27 cards from a standard 52-card international deck. As well as the Tens, Nines and Eights, all cards ranking below the Queens are eliminated. That leaves a deck consisting of  all the Threes, Twos, Aces, Kings, Jacks and Queens plus the Four of Clubs and the two red Sevens. This is known as a clean deck (baralho limpo) or empty deck (baralho vazio).
+      Joker
+      Some players add one Joker to the deck, creating a decks of 41 or 28 cards. The Joker ranks above the Threes and below the Seven of Diamonds (the lowest manilha) - because of this it is sometimes called the 'três e meio' (three and a half). Sometimes the Ten of Clubs instead of a Joker is used as a Three and a Half.
+      Shorter game
+      Many play with a different system of scoring in which each tento is worth 2 points. A basic hand without truco is worth 2 points (one tento). A truco offers to raise the stake to 4 points, and a retruco to 6 points. The next raise is still called as "vale 9" although it in fact raises the stake to 8 points (4 tentos), and the fourth and final raise is to 12 points (the whole game). A special hand is played when one team has 10 points and an iron hand when both teams have 10 points. The standard penalty for infringing the rules remains as 1 tento, now equivalent to 2 points.
+      When just one team has a score of 10, a special hand (mão de 10) is played. There is no truco. After looking at each other's cards the team with 10 points must decide whether to play the cards for 4 points or give the other team 2 points without play. If both teams have 10 a an iron hand (mão de ferro) is played to decide the game.    
+      Some play the vale 9 call in this version as being a raise to 10 points rather than 8.
+      Simplified deal
+      In informal games, many play that the mão does not have the option to burn cards or pass cards to partner: the dealer simply deals three cards to each player. 
+      Cutter may keep a card
+      The rule that the mão can reject or pass cards is intended to balance the advantage that the dealer's team gets from playing last to the first trick. As a different way or redressing the balance, some do not allow the mão to reject cards, but instead play that the mão's partner,  who cuts the cards before the deal, may after cutting look at either the top card or the bottom card of the deck and keep it face down, without showing it to anyoine else, if it is a good one. Some allow the cutter to keep the next card as well. If the cutter is allowed to keep cards, the mão does not have the right to reject or pass cards. If the cutter has kept a card or cards, the dealer gives that player correspondingly fewer cards in the deal, so that the cutter has a three-card hand like everyone else. The cutter cannot keep cards in an iron hand, or when either team is only one tento from victory (with a score of 11 or 10 points, depending on the scoring method).
+      Royal family and poor family
+      When using a clean deck, some play that after all the cards are dealt and before the first lead, if any player other than the mão has three picture cards (nothing but Kings, Jacks and Queens), the player can declare 'Royal Family' (Família Real)
+        , show the cards, discard them and receive three new cards from the dealer. There is no limit to the number of Royal Families that can be declared, provided that this is done before play begins. The mão, who has already had the chance to reject bad cards, cannot trade in a Royal Family. Royal Families cannot be traded at the start of a Special Hand or Iron Hand - anyone attempting to do so incurs a penalty of 1 tento.
+       
+      Some play that a royal families are thrown in face down, which allows players to try to cheat by trading in hands that do not in fact contain three picture cards. Any player can challenge an opponent throwing in a royal family, and if it turns out that not all the cards were pictures, the standard penalty of 1 tento is applied.
+      When playing with a dirty deck, some players allow a hand consisting only of Sixes, Fives and Fours (other than the Zap) to be traded in in a similar way to a Royal Family. Such a hand is known as a Poor Family (Família Pobre).
+      Play after a tied trick
+      Different sets of rules disagree about who plays first after a tied trick.
+    
+      Some say that the person who played the first card of the tied trick also begins the next trick.
+      Some say that whoever played the first of the tying cards plays first to the next trick.
+      Some say that whoever played the last of the tying cards plays first to the next trick.
+    
+    
+      The order of play can be important if one of the players wishes to call "truco". Presumably the same rule about who begins the next trick if a trick is won by a team with both partners playing equally high cards, though this is seldom made clear.
+      If the first trick is tied, the second trick decides the outcome of the hand, so perhaps everyone  will now play the higher of their two remaining cards. Some players make this a rule, that after a tied trick you must play your highest card. Others explicitly say that you do not have to play your highest card, and indeed the first and second players to the trick might wish to conceal their strength in order to win more points from a truco if they know that their partners have good cards.
+      Some have a rule that after a tied trick, cards cannot be played face down.
+      Result of a tied hand
+      Some play that if a hand is completely tied - either with three tied tricks or with all tricks tied after an accepted truco - the dealer's team wins.
+      Others play that in the above case, if the value of the tied hand was increased by a truco, this increased value automatically applied to the next hand.
+      Some play that after a tied hand, the next hand is dealt by the same dealer.
+      Iron hand  not played in the dark
+      Some play that in an iron hand, the players are allowed to  look at their own cards, but not at any other player's cards.  The cards are simply played as the players wish, with no opportunity to say truco, and the team that wins  the hand wins the game.
+    
+    Truco Paulista
+    This version of Truco, played in São Paulo differs from Truco Mineiro  in the ranking of the cards. The "dirty deck" of 40 cards is used, but the manilhas are not fixed. After the cards have been dealt, the top card of the remaining deck is turned face up: this card is known as the "vira" (turned card). The  manilhas for this hand are the four cards of the rank immediately above the vira in the cyclic order [4]-3-2-A-K-J-Q-7-6-5-4-[3]. For example if the vira is a Five, the manilhas are the Sixes, if the vira is a Seven the manilhas are the Queens (remember that Queens  normally rank below Jacks in this game), and if the vira is a Three (the highest rank), the manilhas are the Fours (the lowest). The four manilhas rank according to their suits in descending order Clubs > Hearts > Spades > Diamonds. This system is sometimes known as manilha nova (new manilha), while the fixed manilhas in Truco Mineiro are known as manilha velha (old manilha). Note that the suit order of the manilhas in Truco Paulista is the same as the suit order of the fixed manilhas in Truco Mineiro. The other cards rank in the normal Truco order 3-2-A-K-J-Q-7-6-5-4, missing out the manilha rank.
+
+    Example: if the vira is a Jack, the cards rank from high to low: K - K - K - K - 3's - 2's - A's - J's - Q's - 7's - 6's - 5's - 4's    
+
+    Gustavo Schafaschek reports that in his states of origin - Paraná and Santa Catarina, in the   south - the manilhas are known as Gato (clubs), Copas (hearts), Espadilha (spades) and Mole or Salmoura (diamonds). The rules of play in Truco Paulista differ from Truco Miniero as follows:
+
+    
+
+   The deal is one card at a time, in counter-clockwise order, normally from the bottom of the deck. There is no opportunity to pass or burn cards - everyone plays with the three cards they are dealt. 
+       A call of truco is a bet on winning the hand according to the usual criteria: winning two tricks or the first trick won in case of ties - not just a bet on who will win the current trick. 
+      When a trick is tied, the same player who led to the tied trick leads to the next trick.
+      As usual the first bet, if accepted, raises the stake of the hand from 1 to 3 points. If it is accepted, the play continues as usual, up to the third trick if necessary, to determine the result. If the opponents wish to raise the stake to 6, they do not have to do this immediately. They can continue the play and interrupt it later to call vale 6, and the first team must reply before play continues again. Subsequent bets by alternate teams raising the stake  to  9 and 12 are also possible.
+       Immediately after truco is called, the opponents can look at each other's hands by passing all   cards face down to each other and discuss whether to accept the call. Similarly, if   the opposing team decides to call 6 later on (or immediately), the   Truco-calling team can also look at each other's hands before deciding   if they accept the raise to 6 or decline. 
+      When one team has 11 points the cards are dealt as usual (one at a time from the bottom of the deck). No truco calls are allowed. Before play begins, the members of the team with 11 points can look at each other's hands by passing their cards to each other face down across the table, and must then decide whether to give up for 1 point or play for 3 points.
+      When both teams have 11 points an iron hand (mão de ferro) is played: the cards are dealt as usual but players must not look at their cards. Instead they play to the tricks by simply turning over their top card, and the winners of the deal win the game.
+       When one or both of the teams has 11 points, calling truco automatically gives the   victory to the opposing team - that is, the opposing team wins the   entire game, not only the hand! This is a very harsh rule and very easy   to fall for, so one needs to be very careful to not say truco when one   of the teams has 11 points.
+
+    Web sites for Truco Mineiro and Truco Paulista
+    At Truco Livre you can play Truco Mineiro, Truco Paulista and Truco Gaudério on line.    
+
+    At Ludopoli you can play Truco Paulista and Truco Gaudério.
+
+  
+    
+
+     
+
+      Home Page > Classified Index > Trick Taking Games > Put Group > Truco > Brazilian
+  
+
+This page is maintained by John McLeod, john@pagat.com
+       
+      © John McLeod, 2013, 2016. Last updated: 1st September 2026
+
+  Home • 
+  A-Z • 
+  Sitemap • 
+  Policy
+  
+
+    
+
+  
+

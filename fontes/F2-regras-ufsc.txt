@@ -1,0 +1,88 @@
+
+Regras do Truco Paulista
+
+Introdução
+O truco paulista é um jogo de cartas entre 2 duplas dais quais vence a partida aquela que chegar a 12 pontos primeiro. Cada jogador senta-se alternadamente lado a lado na mesa de jogo de tal forma a ficar de frente a seu par, com os 2 jogadores da dupla rival, um a sua esquerda e outro a sua direita.
+
+O jogo é composto por várias jogadas, chamadas de mão. No começo de cada mão, cada jogador recebe 3 cartas viradas do baralho. Cada mão é composta por 3 rodadas. Em cada rodada cada jogador deve por na mesa uma carta, na sua vez. Vence a rodada o jogador que por a carta de maior valor da mesa. Vence a mão a dupla que ganhar 2 rodadas da mão ou vencer uma e empatar outra.
+
+A ordem de se jogar as cartas na mesa em uma rodada é no sentido anti-horário, isto é, o próximo a jogar é o que está a direita do que jogou. O jogador a começar a primeira mão é escolhido aleatoriamente. Nas demais mãos, o jogador que começa a primeira rodada é sempre o da esquerda ao que começou a mão anterior. A segunda e terceira rodada de uma mão começam por aquele que venceu a rodada anterior. No caso da rodada anterior ter empatado, começa por aquele jogador que pôs na mesa a primeira carta que empatou.
+
+A dupla que vence a primeira rodada de uma mão tem a vantagem em caso de empate nas outras duas rodadas da mão. Em caso de empate na primeira rodada, vence a mão a dupla que vencer primeiro uma das outras rodadas da mão. Se todas as 3 rodadas de uma mão terminarem empatadas, ela é finalizada sem dupla vencedora, ou seja, nenhuma das duas ganha pontos e passa-se para a próxima mão.
+
+O baralho é misturado no começo da cada mão, mas não entre as rodadas de uma mesma mão. Não é permitido mostrar as cartas ao parceiro e nem dizer a ele quais são, mesmo que parcialmente. No entanto, pode-se comentar de forma subjetiva sua mão, como por exemplo: "Estou com uma mão boa.". É comum nos jogos os parceiros se comunicarem através de sinais. Estes sinais têm o risco de passarem dicas, verdadeiras ou falsas, para a dupla rival também.
+
+Nas segunda e terceira rodada de uma mão há a opção do jogador na sua vez jogar a carta virada de costas. Neste caso, o valor dela não é revelado para os demais jogadores e ela é desconsiderada na hora de se avaliar qual carta ganhou a rodada. Este tipo de "jogada em segredo" pode ter seu valor estratégico na partida.
+
+Ordem básica de valores das cartas
+No truco paulista pode-se jogar com 2 opções de conjunto de cartas: o baralho sujo e limpo. No baralho sujo (ou cheio) são 40 cartas, retirando-se apenas os 8, 9, 10 e curingas. No limpo (ou meio baralho) são 24 cartas, retirando-se os 4, 5, 6, 7, 8, 9, 10 e curingas.
+
+O valor das cartas é determinado pelo seu número, independente do naipe, na seguinte ordem crescente:
+4 < 5 < 6 < 7 < Q < J < K < Ás < 2 < 3
+
+A ordem acima serve de base para comparação entre as cartas de uma rodada, mas é preciso levar em consideração a manilha da mão.
+
+Manilha da mão
+No começo de cada mão, vira-se uma carta do baralho e deixa-se visível no meio da mesa, sob o baralho virado. A carta imediatamente superior a carta virada determina a manilha da mão. Se a carta virada for um 3, as manilhas são as cartas com 4. As manilhas são as cartas que valem mais que todas as outras naquela mão.
+
+Assim, se a carta virada foi um 5 de qualquer naipe, as manilhas da mão são as cartas com 6, em ordem crescente de valor por naipe da seguinte forma:
+6 de Ouro < 6 de Espadas < 6 de Copas < 6 de Paus
+
+E a ordem de valores das cartas na mão é a seguinte:
+4 < 5 < 7 < Q < J < K < Ás < 2 < 3 < 6 Ouro < 6 Espadas < 6 Copas < 6 Paus
+
+O naipe da carta só é usado como critério de desempate nas rodadas em que há mais de uma manilha na mesa. No caso de empate onde as cartas mais altas da mesa não são manilhas, não há desempate e a rodada é considerada empatada.
+
+Este tipo de regra de manilha chama-se "manilha variável" pois ela muda a cada mão, determinada pela carta virada no começo. Existe também a variação de regra que usa manilha fixa. Neste caso, ao invés das manilhas serem determinadas no começo de cada mão, elas são sempre fixas nesta ordem:
+7 de Ouro < Ás de Espadas < 7 de Copas < 4 de Paus
+
+As manilhas também têm nomes próprios para cada um de seus naipes:
+
+      . Paus : Zap.
+      . Copas : Copeta ou Escopeta.
+      . Espadas : Espadilha.
+      . Ouro : Picafumo. 
+
+Truco, 6, 9 e 12
+Um pedido de truco aumenta o valor da mão para 3. O pedido de 6, 9 e 12 representam retrucos, isto é, pedem para aumentar o valor da mão respectivamente de 3 para 6, ou de 6 para 9 ou de 9 para 12.
+
+Qualquer jogador pode na sua vez pedir truco. A outra dupla deve então decidir se aceita o truco ou não. Eles podem conversar entre si, sem mostrar as cartas e nem dar dicas explícitas da composição de suas mãos. Qualquer um dos jogadores pode responder o pedido e vale a primeira resposta dada, mesmo que eles se contradigam entre si.
+
+Existem 3 opções de resposta a um pedido de truco:
+
+       Correr
+            a dupla desiste da mão, a que pediu truco ganha imediatamente 1 ponto e começa-se a próxima mão.
+       Aceitar
+            a dupla se mantém na mão e a rodada continua, só que passa a valer 3 pontos a mão.
+       Retrucar - 6!
+            a dupla não só aceita o novo valor da mão de truco como retruca, pedindo para a outra dupla que se aumente o valor da mão para 6. A outra dupla deve então responder com uma das 3 opções listadas abaixo. 
+
+O pedido de 6, 9 e 12 só pode ser feito pela dupla que não fez o último pedido de truco ou retruco na mão. As opções de resposta são análogas ao do truco:
+
+      . Correr
+            a dupla desiste da mão, a que pediu truco ganha imediatamente o valor atual da mão (3, 6 ou 9) e começa-se a próxima mão.
+      . Aceitar
+            a dupla se mantém na mão e a rodada continua, só que passa a valer 6, 9 ou 12 pontos a mão.
+      . Retrucar - 9! ou 12!
+            a dupla não só aceita o novo valor da mão como retruca, pedindo para a outra dupla que se aumente o valor da mão para 9 ou 12. A outra dupla deve então responder a este retruco. No pedido de 12 não existe a opção de retrucar, só aceitar ou correr. 
+
+A ordem de pedido de truco, 6, 9, e 12 é sempre crescente e deve ser respeitada. Isto é, só é possível pedir truco se a mão está valendo 1 ponto, assim como só se pede 6 se ela já vale 3, só se pede 9 se ela já vale 6 e só se pede 12 se ela já vale 9. Não é possível pular nenhuma destas etapas e nem voltar atrás. Assim por exemplo, se a mão está valendo 6, não se pode pedir 6 novamente, nem 12 e nem pedir para voltar a valer 1 ponto ou 3 pontos. Outro exemplo, para uma mão chegar a 12, é preciso que a dupla 1 peça truco, depois a dupla 2 peça 6, depois a dupla 1 peça 9, depois a dupla 2 peça 12 e finalmente a dupla 1 aceite. Não existem outros valores de pontuação ganha por uma mão além destas: 1, 3, 6, 9 ou 12.
+
+Um pedido de truco ou retruco aceito só vale para a mão atual. Ao finalizá-la, a próxima mão começa valendo sempre 1 ponto (exceto na mão de onze) e qualquer uma das duplas pode pedir o primeiro truco da nova mão.
+
+Mão de Onze
+Quando uma dupla chega a onze pontos, ela está com a mão de onze. A partir deste momento, no começo de cada mão esta dupla pode escolher se continua com a mão ou não.
+
+Se a mão for aceita, ela já começa valendo 3 pontos, ou seja, se a outra dupla vencer, recebe 3 pontos. Se a mão for recusada, a dupla rival que não está com 11 pontos recebe imediatamente 1 ponto a mais, recolhem-se as cartas da mão sem jogar nenhuma rodada desta e inicia-se a próxima mão.
+
+Para decidir se aceita ou não a mão, a dupla que está com onze pontos pode ver entre si as cartas. Isso só é possível neste momento do jogo. A decisão de se aceitar ou não a mão é feita após cada jogador receber suas 3 cartas e a manilha ter sido determinada, mas necessariamente antes que o primeiro jogador ponha a primeira carta da rodada na mesa. Qualquer um dos jogadores da dupla da mão de onze pode responder se aceita ou não a mão e vale a primeira resposta dada, mesmo que eles se contradigam entre si.
+
+Na mão de onze não é possível pedir 6, ou seja, ela sempre vale 3 se for aceita ou 1 se for recusada. Se a dupla que está com 11 pontos aceitar a mão e a vencer, ela vence a partida.
+
+Mão de Ferro
+A mão de ferro acontece quando as duas duplas estão com 11 pontos. Neste caso, nenhuma das duas duplas decide se aceita ou não a mão. Joga-se a mão valendo 1 ponto, sem as duplas verem as cartas entre si e sem possibilidade de pedido de truco. Vence a partida a dupla que vencer a mão de ferro.
+
+Dependendo da regra usada, a mão de ferro é aberta, isto é, cada um pode ver suas cartas normalmente, ou é fechada. Neste caso, cada jogador recebe suas cartas de costas e na sua vez joga uma na mesa sem vê-la. Viram-se as 4 cartas da rodada ao mesmo tempo e vê-se o vencedor. Ou seja, a mão de ferro é jogada sem ninguém saber qual carta está pondo na mesa.
+
+Final de Partida
+A partida termina quando a primeira dupla chega ou passa de 12 pontos. Isso pode acontecer mesmo que ela não passe pela mão de onze. Por exemplo, num placar de 9x9, uma dupla vence uma mão trucada valendo 3 pontos, ela vence a partida com 12x9. É comum as duplas jogarem várias partidas entre si, contando os resultados num placar de partidas vencidas. Ao final de cada partida que chega a 12 pontos, este placar geral é atualizado e inicia-se uma nova partida com placar de 0x0. 
