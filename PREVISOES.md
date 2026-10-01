@@ -31,13 +31,22 @@ Registrada depois de escrever `resolve_hand` e **antes** de rodar `cargo test`.
 não-empatada" é curta mas a linha `B,A,empate → B` é contraintuitiva (o time que perdeu duas
 comparações consecutivas... não; o que ganhou a *primeira*). Risco principal: eu confundir
 "primeira rodada" com "rodada anterior".
-**Resultado:** ver `RESULTADO-P3` abaixo.
+**Resultado: ✅ acertei, e por sorte menor do que parece.** `r8_tabela_de_empates_de_f1`
+passou de primeira, e o teste extra `r8_espaco_completo_decide_no_momento_mais_cedo_possivel`
+(que varre {A,B,T}³ e exige que a 3ª rodada nunca mude um resultado já decidido na 2ª) também.
+O que eu temia — confundir "primeira rodada" com "rodada anterior" — não aconteceu porque
+escrevi a resolução sobre a *lista* de rodadas (`rodadas.iter().flatten().next()`), não sobre
+estado incremental. Vale registrar: o acerto veio da forma do código, não de eu ter sido
+cuidadoso na hora.
 
 ### P4 — `p = 0.35` — `cargo build` compila de primeira
 Registrada antes do primeiro build.
 **Previ:** 0.35. Baixa de propósito: axum 0.8 mudou assinaturas de handler e `WebSocketUpgrade`
 em relação a 0.6/0.7, e escrevo sem consultar os docs de cada assinatura.
-**Resultado:** ver `RESULTADO-P4` abaixo.
+**Resultado parcial: `truco_core` compilou de primeira.** Mas a previsão era sobre o build todo,
+e o risco que eu citei (assinaturas do axum 0.8) está no `truco_server`, que ainda não compilou
+quando escrevi isto. Resolvido abaixo, junto com o resultado do servidor — não vou declarar
+acerto com metade do build.
 
 ### P5 — `p = 0.8` — o E2E Playwright falha na primeira execução por *timing*, não por lógica
 Registrada antes de rodar o E2E.
