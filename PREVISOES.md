@@ -60,10 +60,51 @@ Registrada antes de rodar o E2E.
 **Previ:** 0.8 de que a primeira falha seja espera/ordem de eventos (dois navegadores entrando
 na mesma mesa), e não regra de jogo errada — porque as regras já estarão cobertas por teste de
 unidade.
-**Resultado:** ver `RESULTADO-P5` abaixo.
+**Resultado: ❌ errei, e de um jeito instrutivo.** A primeira execução deu 12 passando, 5
+falhando, 1 intermitente. A causa dominante foi **lógica, não timing**:
+
+| falha | causa real | é timing? |
+|---|---|---|
+| truco não sobe para 3 | asserção minha que contradizia a R9 que eu mesmo escrevi (E4) | não |
+| ranking / emblema | confundi "quem viu o fim primeiro" com "quem venceu" (E6) | não |
+| webhook não entregue | `http://e2e:9099` não resolve para container de `compose run` (E5) | não |
+| 2x2 não termina | driver lento + limite de 120s pequeno para 2x2 | **sim** |
+| unicode (intermitente) | contenção de host + fila compartilhada entre testes (E7) | parcialmente |
+
+Eu previ 0.8 em "timing, não lógica" com o raciocínio de que "as regras já estarão cobertas por
+teste de unidade". O raciocínio estava certo e **irrelevante**: as regras estavam cobertas, e o
+que falhou foi a lógica *dos testes*, não a do produto. Eu tratei "lógica" como "lógica do
+jogo" e esqueci que o teste também tem lógica — e que a lógica do teste é a menos revisada do
+projeto, porque não existe teste do teste.
 
 ### P6 — `p = 0.5` — o subagente revisor acha ≥1 divergência real no motor
 Registrada antes de invocar o subagente.
 **Previ:** 0.5. Se os testes de unidade cobrem a tabela de F1, o que sobra para ele achar é
 regra *não* coberta por teste: mão de onze, ordem de pedido de truco, ou encoberta na 1ª rodada.
-**Resultado:** ver `RESULTADO-P6` abaixo.
+**Resultado: ✅ acertei, e subestimei.** Ele achou **uma** divergência real de regra (a direção
+da rotação do mão, R13/E8) **mais** duas regras de F1 que eu nunca implementei nem especifiquei
+(R17 e R18) **mais** um furo de autorização no motor, **mais** 7 regras citadas e sem teste —
+todas confirmadas por mim contra as fontes. Zero achados fabricados; ele declarou
+"categoria C: nada encontrado" em vez de inventar.
+
+E o palpite dentro da previsão — "o que sobra para ele achar é regra não coberta por teste:
+mão de onze, ordem de pedido de truco, ou encoberta na 1ª rodada" — estava errado nos três
+itens. O que ele achou foi o que eu nem tinha considerado possível: um teste que afirmava a
+implementação em vez da fonte. Medição completa em [MULTIAGENTE.md](MULTIAGENTE.md).
+
+### P7 — `p = 0.6` — depois das correções, a suíte E2E passa inteira
+Registrada **depois** de disparar a segunda execução e **antes** de ver qualquer resultado dela.
+**Previ:** 0.6. Não mais alto porque esta máquina está com 90+ containers de pé e eu já vi uma
+query trivial de SQLite levar 10 s aqui; a partida 2x2 entre quatro navegadores é o teste mais
+sensível a isso. Se falhar, aposto que é ela, por tempo, e não por asserção.
+**Resultado:** ver abaixo.
+
+### P8 — `p = 0.3` — existe ainda ≥1 regra de F1/F2 que eu não implementei e não sei
+Registrada agora, sem jeito de verificar nesta sessão.
+**Previ:** 0.3 **depois** da revisão adversarial ter achado duas (R17, R18). Antes dela eu teria
+dito 0.1, e teria errado. Corrijo para cima porque descobri que meu modo de ler as fontes perde
+regras que estão em parágrafos que eu já aproveitei — e a revisão cobriu o motor, não as fontes
+inteiras linha por linha.
+**Resultado: não verificável nesta sessão.** Fica registrado como risco conhecido, não como
+acerto nem como erro. Registrar uma previsão que eu não posso resolver é melhor que não
+registrar: ela diz onde eu acho que o trabalho está incompleto.
