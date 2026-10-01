@@ -32,3 +32,4 @@ decisões para cá, então elas ficam aqui — mas deixei em `truco-zap/DECISOES
 - [`decisoes/`](decisoes/) — cada decisão de desenho, com a alternativa descartada
 - [`PREVISOES.md`](PREVISOES.md) — o que previ antes de verificar, com probabilidade, e se acertei
 - [`ERROS.md`](ERROS.md) — todo erro meu, e como eu o encontrei
+- [`MULTIAGENTE.md`](MULTIAGENTE.md) — o subagente que usei: custo medido, o que rendeu, se valeu
