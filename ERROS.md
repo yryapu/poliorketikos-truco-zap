@@ -175,3 +175,19 @@ alguém aplicar `transform`. É a classe de bug que só um clique de verdade enc
 teste passar. O teste é que estava acoplado demais — conferia caixa alta de uma frase de
 interface, que é exatamente a coisa que deve poder mudar. Agora ele usa `/sua vez/i`, e a frase
 melhor fica. **Teste não é dono da copy.**
+
+### E16 — ranking em que o jogador não se acha
+**Como encontrei:** o teste de ranking falhou — procurava o apelido do vencedor na lista e não
+achava. A primeira reação foi "o teste está errado". Estava, mas não só.
+**O que a mensagem de erro mostrou:** o `Received string` do Playwright trazia os 50 primeiros
+colocados, todos com `1V / 0D`, e o jogador recém-vitorioso não estava entre eles. Com o banco
+cheio de convidados das execuções anteriores, o top 50 ficou saturado de empates.
+**O problema real, que o teste só tropeçou:** `/api/ranking` devolvia os N primeiros e nada mais.
+Um ranking em que você não se encontra não é um ranking — é uma lista de outras pessoas. Isso
+não aparece com o banco vazio, que é como eu testei a vida inteira.
+**Correção:** `/api/ranking` passa a devolver também a **sua** linha, com a posição real
+calculada sobre a tabela inteira (`ROW_NUMBER()` numa subconsulta), esteja você em 1º ou em 300º.
+A tela fixa essa linha no pé da lousa. A lista visível caiu de 50 para 25, porque agora ela não
+precisa mais tentar conter todo mundo.
+**Lição:** "o teste está errado" e "o produto está errado" não são excludentes. Aqui os dois
+estavam, e corrigir só o teste teria apagado a evidência do defeito.
